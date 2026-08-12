@@ -14,6 +14,7 @@ programa {
     pontos = vitorias*3 + empates
     // apresentação dos resultados - saída
     // escreva("Seu time tem " + pontos + " pontos")
-    escreva(time + ": " + pontos)
+    escreva(time + ": " + pontos + " pontos")
+    // escreva("Quantidade de pontos: " + pontos)
   }
 }
