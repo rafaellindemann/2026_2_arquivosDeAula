@@ -1,0 +1,10 @@
+#nome0, #senha0{
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
