@@ -21,11 +21,24 @@ function calcularLucroGanso(){
     
     // gastos       --  100%
     // lucroReais   --  x% (lucroPercentual)
-
     // gastos*lucroPercentual = lucroReais*100
     // lucroPercentual = (lucroReais*100)/gastos
     lucroPercentual = (lucroReais/gastos)*100
 
     // saída
     alert('Lucro: R$' + lucroReais.toFixed(2) + ' ou ' + lucroPercentual + '%')
+}
+
+// v68.4
+// git add . // manda o git procurar e listar todas as alterações
+// git commit -m "feat/ v68.5 login do pokemon" // oficializa uma nova versão local
+// git push // envia essa nova versão para o github
+
+
+function calcularPrecoDoPrompt(){
+    // entendimento
+    // infos e variáveis
+    // leitura de dados
+    // processamento
+    // saída
 }
