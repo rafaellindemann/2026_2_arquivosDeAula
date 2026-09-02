@@ -37,8 +37,19 @@ function calcularLucroGanso(){
 
 function calcularPrecoDoPrompt(){
     // entendimento
+        // ler o tamanho do texto do prompt e calcular o seu custo. 
+        // o custo é calculado por: 5 tokens fixos + 1 token por caracter do prompt.
+
     // infos e variáveis
+    let textoPrompt
+    let tamanhoPrompt 
+    let totalDeTokens
     // leitura de dados
+    // tamanhoPrompt = Number(prompt('Quantos caracteres tem seu prompt?'))
+    textoPrompt = prompt('Digite seu prompt')
     // processamento
+    tamanhoPrompt = textoPrompt.length
+    totalDeTokens = 5 + tamanhoPrompt
     // saída
+    alert("Seu prompt vai consumir " + totalDeTokens + ' tokens')
 }
