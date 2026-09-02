@@ -1,5 +1,24 @@
 // let nomeUsuario = 'Umberto Doisberto'
 
+
+
+function verificarMaioridade(){
+// entendimento
+    // o programa deve ler a idade de uma pessoa e informar se ela é maior de idade ou não.
+// infos e variáveis
+    let idade
+// entrada de dados
+    idade = Number(prompt("Digite sua idade:"))
+// processamento
+// saída 
+    if(idade >= 18){
+        alert("Maior de idade")
+    }else{
+        alert("NÃO é maior de idade")
+    }
+}
+
+
 function calcularLucroGanso(){
     // entendimento
         // O programa deve ler gastos, faturamento em ingressos e faturamento na loja e calcular o lucro em reais e o lucro percentual.

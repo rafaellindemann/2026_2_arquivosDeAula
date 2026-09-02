@@ -1,10 +1,21 @@
 .capitulo{
+    /* width: 80%; */
     background-color: aquamarine;
 
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 
-    
+    gap: 10px;
+    flex-wrap: wrap;
 }
+/* display: flex; // configura o layout dentro da div como um flexbox
+flex-direction: column; // os elementos internos serão dispostos verticalmente, um romanticamente em cima do outro
+justify-content: center; // alinhamento ao longo do eixo principal (neste caso, vertical)
+align-items: center; // alinhamento no eixo secundário
+
+gap: 10px; // espaçamento entre os elementos
+flex-wrap: wrap; // faz quebrar a linha quando os elementos forem maiores que a largura disponível
+*/ 
+
