@@ -1,6 +1,44 @@
 // let nomeUsuario = 'Umberto Doisberto'
 
 
+// Jean, 2
+// Daniel, 3
+// Felipe, 4
+// Marcos, 5
+// Rafael, 6
+
+sorteado = Math.ceil(Math.random()*10)
+
+function exemplo(){
+// entendimento
+// infos e variáveis
+// entrada de dados
+// processamento
+// saída    
+}
+
+function verificarParidade(){
+// entendimento
+    // Rafael
+    // este programa lê um número digitado pelo usuário e verifica se ele é par ou ímpar
+// infos e variáveis
+     let numero
+// entrada de dados
+//felipe
+numero = Number(prompt("digite o numero: "))
+
+// processamento
+// saída    
+//daniel
+if(numero % 2 == 0){
+    alert("É PAR!!  ❤️")
+    document.getElementById('resultadoParidade').showModal()
+}else{
+    alert("É IMPAR!!! 😎")
+}
+
+}
+
 
 function verificarMaioridade(){
 // entendimento

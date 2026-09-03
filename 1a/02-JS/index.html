@@ -12,8 +12,16 @@
     <h2>Exercícios do {#0027}.sq2</h2>
     <div class="capitulo">
         <button onclick="verificarMaioridade()">Maioridade</button>
+        <button onclick="verificarParidade()">Pares</button>
         <button></button>
-        <button></button>
+        <dialog id="resultadoParidade">
+            <div id="mensagem">
+                É par
+                <img src="par.jpg" alt="">
+                <button onclick="document.getElementById('resultadoParidade').close()">X</button>
+
+            </div>
+        </dialog>
     </div>
 
     <h2>Exercícios do {#0011}</h2>
