@@ -1,13 +1,126 @@
 // let nomeUsuario = 'Umberto Doisberto'
 
 
+// pair programming: programação em pares
+
+// {} chaves ==> blocos de código e objetos
+// () parênteses ==> argumentos de função
+// [] colchetes ==> índices em arrays
+
+// {⭐} Dia da Semana: Peça ao usuário que insira um número de 1 a 7 e, em seguida, mostre o dia da semana correspondente (por exemplo, 1 = Domingo, 2 = Segunda, etc.).
+
+function encontrarDiaDaSemana(){
+// entendimento
+    // receber um número de 1 a 7 e mostrar o dia da semana correspondente
+
+// infos e variáveis
+    let numero
+// entrada de dados
+    numero = Number(prompt(`Digite um número de 1 a 7:`))
+// processamento
+// saída    
+    if(numero == 1){
+        alert('Domingo')
+    }else if(numero == 2){
+        alert('Segunda')
+    }else if(numero == 3){
+        alert('Terça')
+    }else if(numero == 4){
+        alert('Quarta')
+    }else if(numero == 5){
+        alert('Quinta')
+    }else if(numero == 6){
+        alert('Sexta')
+    }else if(numero == 7){
+        alert('Sábado')
+    }else{
+        alert("Leia com voz do Faustão: \nERRRRRRRRRRRROOOUUUUUUU")
+    }
+}
+function encontrarDiaDaSemana2(){
+// entendimento
+    // receber um número de 1 a 7 e mostrar o dia da semana correspondente
+
+// infos e variáveis
+    let numero
+// entrada de dados
+    numero = Number(prompt(`Digite um número de 1 a 7:`))
+// processamento
+// saída  
+
+    switch(numero){
+        case 1:
+            alert('Domingo')
+            break
+        case 2:
+            alert('Segunda')
+            break
+        case 3:
+            alert('Terça')
+            break
+        case 4:
+            alert('Quarta')
+            break
+        case 5:
+            alert('Quinta')
+            break
+        case 6:
+            alert('Sexta')
+            break
+        case 7:
+            alert('Sábado')
+            break
+        default:
+            alert('Erro 404, dia não encontrado!')
+    }
+
+
+    // if(numero == 1){
+    // }else if(numero == 2){
+    //     alert('Segunda')
+    // }else if(numero == 3){
+    //     alert('Terça')
+    // }else if(numero == 4){
+    //     alert('Quarta')
+    // }else if(numero == 5){
+    //     alert('Quinta')
+    // }else if(numero == 6){
+    //     alert('Sexta')
+    // }else if(numero == 7){
+    //     alert('Sábado')
+    // }else{
+    //     alert("Leia com voz do Faustão: \nERRRRRRRRRRRROOOUUUUUUU")
+    // }
+}
+function encontrarDiaDaSemana3(){
+// entendimento
+    // receber um número de 1 a 7 e mostrar o dia da semana correspondente
+
+// infos e variáveis
+    let numero
+// entrada de dados
+    numero = Number(prompt(`Digite um número de 1 a 7:`))
+// processamento
+// saída    
+    if(numero == 1) alert('Domingo')
+    else if(numero == 2) alert('Segunda')
+    else if(numero == 3) alert('Terça')
+    else if(numero == 4) alert('Quarta')
+    else if(numero == 5) alert('Quinta')
+    else if(numero == 6) alert('Sexta')
+    else if(numero == 7) alert('Sábado')
+    else alert("Leia com voz do Faustão: \nERRRRRRRRRRRROOOUUUUUUU")
+}
+
+
+// rotação de estações:
 // Jean, 2
 // Daniel, 3
 // Felipe, 4
 // Marcos, 5
 // Rafael, 6
 
-sorteado = Math.ceil(Math.random()*10)
+// sorteado = Math.ceil(Math.random()*10)
 
 function exemplo(){
 // entendimento
@@ -109,4 +222,5 @@ function calcularPrecoDoPrompt(){
     totalDeTokens = 5 + tamanhoPrompt
     // saída
     alert("Seu prompt vai consumir " + totalDeTokens + ' tokens')
+    alert(`Seu prompt vai consumir ${totalDeTokens} tokens`)
 }
