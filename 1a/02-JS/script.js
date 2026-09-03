@@ -7,8 +7,23 @@
 // () parênteses ==> argumentos de função
 // [] colchetes ==> índices em arrays
 
-// {⭐} Dia da Semana: Peça ao usuário que insira um número de 1 a 7 e, em seguida, mostre o dia da semana correspondente (por exemplo, 1 = Domingo, 2 = Segunda, etc.).
 
+
+function verificarRegexSenha(){
+    const senha = prompt('Digite a senha:')
+
+// Regex com Lookahead
+const regexSenha = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).+$/;
+
+if (regexSenha.test(senha)) {
+  console.log("Senha válida!");
+} else {
+  console.log("Senha inválida. Deve conter ao menos uma letra maiúscula, uma minúscula e um símbolo.");
+}
+}
+
+
+// {⭐} Dia da Semana: Peça ao usuário que insira um número de 1 a 7 e, em seguida, mostre o dia da semana correspondente (por exemplo, 1 = Domingo, 2 = Segunda, etc.).
 function encontrarDiaDaSemana(){
 // entendimento
     // receber um número de 1 a 7 e mostrar o dia da semana correspondente
