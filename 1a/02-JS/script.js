@@ -239,3 +239,6 @@ function calcularPrecoDoPrompt(){
     alert("Seu prompt vai consumir " + totalDeTokens + ' tokens')
     alert(`Seu prompt vai consumir ${totalDeTokens} tokens`)
 }
+
+
+// if(marujos >= 10 && comidaPorMarujo >= 1.5)
