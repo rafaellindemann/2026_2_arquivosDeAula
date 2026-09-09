@@ -1,5 +1,37 @@
 
 
+function calcularContaDaPousada(){
+// entendimento
+    // o programa deve ler o número de dias que vai ficar no albergue e apresentar o valor final da conta e sua composição. O valor da diária depende de quantos dias ficou. Tem descontos e multa.
+
+// infos e variáveis
+    let qtd_dias, valorDaDiaria
+    let totalBruto, desconto10, desconto15, totalPagar
+    let multa=150    
+
+// entrada de dados
+    qtd_dias = Number(prompt("Quantos dias?"))
+// processamento
+    if(qtd_dias <= 5){
+        valorDaDiaria = 100
+    }else if(qtd_dias <= 10){
+        valorDaDiaria = 90
+    }else{
+        valorDaDiaria = 80
+    }
+
+    totalBruto = qtd_dias * valorDaDiaria
+    desconto10 = totalBruto * 10/100
+    desconto15 = totalBruto * 15/100
+    totalPagar = totalBruto - (desconto10 + desconto15) + multa
+
+// saída
+
+
+}
+
+
+
 function automatizarJaulas(){
 //
     if(visitantes==0 && (hora<8 || hora>18)){}
