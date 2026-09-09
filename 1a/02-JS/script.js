@@ -1,3 +1,88 @@
+
+
+function automatizarJaulas(){
+//
+    if(visitantes==0 && (hora<8 || hora>18)){}
+    
+    // visitantes=0, hora=10
+    if(visitantes==0 && (hora<8 || hora>18)){}
+    if(0==0 && (10<8 || 10>18)){}
+    if(v && (f || f)){}
+    if(v && f){}
+    if(f){}
+    
+    // visitantes=0, hora=20
+    if(visitantes==0 && (hora<8 || hora>18)){}
+    if(0==0 && (20<8 || 20>18)){}
+    if(v && (f || v)){}
+    if(v && v){}
+    if(v){}
+    
+    // visitantes=10, hora=6
+    if(visitantes==0 && (hora<8 || hora>18)){}
+    if(10==0 && (6<8 || 6>18)){}
+    if(f && (v || f)){}
+    if(f && v){}
+    if(f){}
+
+
+    
+    // if(visitantes==0){
+    //     if(hora<8 || hora>18){
+    //         alert('pode entrar')
+    //     }else{
+    //         alert('Não pode')
+    //     }
+    // }else{
+    //     alert('Não pode')
+    // }
+
+}
+
+
+// 4x5+1
+
+function  controladorDeAcesso(){
+// entendimento
+    // verificar se o usuário tem crachá válido e digital cadastrada para poder liberar o acesso ao centro de comando.
+// infos e variáveis
+    let crachaValido, digitalReconhecida
+// entradas de dados
+    crachaValido = confirm("Tem crachá válido?")   
+    digitalReconhecida = confirm("Tem digital reconhecida?") 
+// processamento
+// saídas
+    // if(crachaValido==true && digitalReconhecida==true){
+    if(crachaValido && digitalReconhecida){
+        alert("Acesso liberado")
+    }else{
+        alert("Acesso negado")
+    }
+}
+function  controladorDeAcesso2(){
+// entendimento
+    // verificar se o usuário tem crachá válido e digital cadastrada para poder liberar o acesso ao centro de comando.
+// infos e variáveis
+    let crachaValido, digitalReconhecida
+// entradas de dados
+    // crachaValido = prompt("Tem crachá válido (s/n)?")   
+    // digitalReconhecida = prompt("Tem digital reconhecida (s/n)?") 
+
+    crachaValido = prompt("Tem crachá válido?\n1: sim\n2: não")   
+    digitalReconhecida = prompt("Tem digital reconhecida?\n1: sim\n2: não") 
+// processamento
+// saídas
+    // if(crachaValido==true && digitalReconhecida==true){
+    if(crachaValido=='1' && digitalReconhecida=='1'){
+        alert("Acesso liberado")
+    }else{
+        alert("Acesso negado")
+    }
+}
+
+
+
+
 // let nomeUsuario = 'Umberto Doisberto'
 
 
