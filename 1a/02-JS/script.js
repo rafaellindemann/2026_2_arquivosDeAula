@@ -1,4 +1,18 @@
 
+
+// O Capitão Ganso costuma entrevistar pessoalmente os aspirantes a marujos. Os critérios principais são: 
+
+// -a pessoa precisa saber nadar 
+// e 
+// ter mais de 16 anos. 
+
+
+// Em algumas ocasiões especiais, 
+// se o candidato tiver carta de recomendação de outro pirata, o capitão aceita mesmo sem saber nadar, 
+// desde que tenha ao menos 14 anos.
+
+// if( (sabeNadar==true && idade>16) || (recomendacao==true && idade>=14) )
+
 function calcularFrete2(){
     let peso, distancia, volume
     let frete
@@ -6,10 +20,32 @@ function calcularFrete2(){
     peso = Number(prompt('Digite o peso da encomenda:'))
     distancia = Number(prompt('Digite a distância do frete:'))
     volume = Number(prompt('Digite o volume da encomenda:'))
-    
-    frete=15+(2*peso)+(0.05*distancia)+(10*volume)
 
-    alert("Valor do frete: R$" + frete.toFixed(2).replace('.',','))
+    if(peso>0 && distancia>0 && volume>0){
+        frete=15+(2*peso)+(0.05*distancia)+(10*volume)
+        alert("Valor do frete: R$" + frete.toFixed(2).replace('.',','))
+    }else{
+        alert('Não viaja, valores inválidos')
+    }
+    
+    if(peso<=0 || distancia<=0 || volume<=0){
+        alert('Não viaja, valores inválidos')
+    }else{
+        frete=15+(2*peso)+(0.05*distancia)+(10*volume)
+        alert("Valor do frete: R$" + frete.toFixed(2).replace('.',','))    
+    }
+
+        if(peso>0 && distancia>0 && volume>0){
+        frete=15+(2*peso)+(0.05*distancia)+(10*volume)
+        if(frete>=50){
+            alert("Valor do frete: R$" + frete.toFixed(2).replace('.',','))
+        }else{
+            alert('Cancelando a corrida kkkk')
+        }
+    }else{
+        alert('Não viaja, valores inválidos')
+    }
+    
 
 }
 
