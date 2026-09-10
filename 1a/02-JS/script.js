@@ -1,4 +1,29 @@
 
+function calcularFrete2(){
+    let peso, distancia, volume
+    let frete
+    
+    peso = Number(prompt('Digite o peso da encomenda:'))
+    distancia = Number(prompt('Digite a distância do frete:'))
+    volume = Number(prompt('Digite o volume da encomenda:'))
+    
+    frete=15+(2*peso)+(0.05*distancia)+(10*volume)
+
+    alert("Valor do frete: R$" + frete.toFixed(2).replace('.',','))
+
+}
+
+function calcularPrecoMacas(){
+// entendimento
+
+// infos e variáveis
+// leitura de dados
+// processamento
+// if(){
+
+// }
+// saída
+}
 
 function calcularContaDaPousada(){
 // entendimento
@@ -26,7 +51,12 @@ function calcularContaDaPousada(){
     totalPagar = totalBruto - (desconto10 + desconto15) + multa
 
 // saída
-
+    alert("Total bruto: R$" + totalBruto.toFixed(2) + 
+        "\nDesconto emocional: R$" + desconto10.toFixed(2) +
+        "\nDesconto Uber: R$" + desconto15.toFixed(2) +
+        "\nMulta: R$" + multa.toFixed(2) +
+        "\n===============================" +
+        "\nTotal a pagar: R$" + totalPagar.toFixed().replace('.', ','))
 
 }
 
