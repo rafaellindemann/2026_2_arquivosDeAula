@@ -15,6 +15,15 @@
     color: var(--branco);
     width: 300px;
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    padding: 25px;
+
 }
 
 .principal{
@@ -33,4 +42,22 @@
 
     background-color: aquamarine;
 
+}
+
+#logo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.contadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#contador-atividades, #contador-co2 {
+    text-align: center;
+    font-size: 32px;
 }
