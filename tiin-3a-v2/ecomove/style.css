@@ -61,3 +61,29 @@
     text-align: center;
     font-size: 32px;
 }
+
+#painel-atividades {
+    height: 50vh;
+}
+
+#btLogin {
+    background-color: var(--cinza);
+    color: var(--branco);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.seletor-veiculos{
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.seletor-veiculos button{
+    background-color: var(--cinza);
+    color: var(--branco);
+    border: none;
+}
+
