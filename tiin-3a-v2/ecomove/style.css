@@ -1,6 +1,36 @@
+
+* {
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinza: #333333;
+    --roxo: #483dad;
+    --vermelho: #ff0000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: var(--cinza);
+    color: var(--branco);
+    width: 300px;
+    min-height: 100vh;
+}
+
+.principal{
+    background-color: var(--branco);
+    min-height: 100vh;
+    width: calc(100vw - 300px);
+
+}
+
 .app {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
+
+    min-height: 100vh;
+
+    background-color: aquamarine;
+
 }
