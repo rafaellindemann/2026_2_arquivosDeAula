@@ -59,7 +59,8 @@
     
     //     i++
     // }
-    
+
+// CASO CLÁSSICO DE WHILE (repete enquanto algo (não) acontece)
     // let qtd = 0
     // let total = 0
     // let produto = -1
@@ -85,6 +86,65 @@ let resultado = document.getElementById('resultado')
 
 // 5 x 1 = 5
 // 5 x 2 = 10
+
+
+function parte1ex6(){
+    
+    resultado.innerHTML = ''
+    for(let i = 1; i<=20; i++){
+        if(i%2 != 0){
+            resultado.innerHTML += '<p class="numeros">' + i + '</p>'
+        }
+    }
+    // let i = 0
+    // while(i<10){
+    //     // trampo
+    //     console.log(i)
+    //     i++
+    // } 
+}
+
+function testar(){
+    let valor = -1
+    valor = Number(prompt("Digite o preço do produto:"))
+
+}
+
+let produtosCont = document.getElementById('produtos')
+function demoSpoiler(){
+    let produtos = [
+        {
+            id: 0,
+            img: '🚴',
+            nome: "Bicicleta",
+            preco: 1000
+        },
+        {
+            id: 1,
+            img: '🏍️',
+            nome: "Moto",
+            preco: 10000
+        },
+        {
+            id: 2,
+            img: '🚗',
+            nome: "Carro",
+            preco: 100000
+        },
+    ]
+
+    produtosCont.innerHTML = ''
+    for(let i=0; i<produtos.length; i++){
+        produtosCont.innerHTML += `
+            <div class="produto">
+                <h2>${produtos[i].img}</h2>
+                <p>${produtos[i].nome}</p>
+                <p>R$${produtos[i].preco}</p>
+                <button onclick="alert('Você comprou o ${produtos[i].nome}')">Comprar</button>
+            </div>
+        `
+    }
+}
 
 function parte1ex4(){
     resultado.innerHTML = 'Parte 1, ex4<br>'
