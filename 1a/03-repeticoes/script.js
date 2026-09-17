@@ -27,9 +27,98 @@
 // }
 
 
-let i = 1500
-while(i>0){
-    i--
-    if(i<1499)i=0
-    console.log(i+2);
+// let i = 1500
+// while(i>0){
+//     i--
+//     if(i<1499)i=0
+//     console.log(i+2);
+// }
+
+
+
+// =================================
+
+// let i = 0
+// while(i<3){
+//     let produto = Number(prompt('Digite o preço do ' + i + 'o produto'))
+
+//     i++
+// }
+// let i = 10
+// while(i>0){
+    //     let produto = Number(prompt('Digite o preço do ' + i + 'o produto'))
+    
+    //     i--
+    // }
+    
+    
+    // let qtd = Number(prompt('Quantos produtos?'))
+    // let i = 0
+    // while(i<qtd){
+    //     let produto = Number(prompt('Digite o preço do ' + i + 'o produto'))
+    
+    //     i++
+    // }
+    
+    // let qtd = 0
+    // let total = 0
+    // let produto = -1
+    // while(produto != 0){
+    //     // produto = Number(prompt('Digite o preço do ' + 'o produto'))
+    //     produto = Number(prompt('Digite o preço do ' + (qtd+1) + 'o produto\n(0 para parar)'))
+    //     if(produto != 0) qtd++
+    //     total += produto
+    // }
+    // alert('Valor total: ' + total + '\nQuantidade: ' + qtd)
+
+
+// if(produto != 0){
+//     qtd++
+// }
+
+
+// #0065
+// Parte 1
+
+let resultado = document.getElementById('resultado')
+
+function parte1ex3(){
+    resultado.innerHTML = 'Parte 1, ex3<br>'
+}
+
+function parte1ex2(){
+    resultado.innerHTML = 'Parte 1, ex2<br>'
+
+    let i = 10
+    while(i >= 0){
+        resultado.innerHTML += i + '<br>'
+        i--
+    }
+}
+
+
+function parte1ex1(){
+    // ex1
+    document.getElementById('resultado').innerHTML = 'Parte 1, ex1<br>'
+    let i = 0
+    while(i<10){
+        i++
+        let quadrado = i*i
+        console.log(i + ': ' + quadrado);
+        document.getElementById('resultado').innerHTML += i + ': ' + quadrado + '<br>'
+    }
+}
+
+// function calcularRaiz(){
+//     let n = Number(prompt("Digite o número"))
+//     let raiz = Math.sqrt(n)
+//     alert(raiz)
+// }
+
+let totalCompra = 0
+function somarCompra(){
+    let compra = Number(document.getElementById('inputValor').value)
+    totalCompra += compra
+
+    document.getElementById('resultado').innerHTML = totalCompra
 }
