@@ -82,6 +82,21 @@
 
 let resultado = document.getElementById('resultado')
 
+
+// 5 x 1 = 5
+// 5 x 2 = 10
+
+function parte1ex4(){
+    resultado.innerHTML = 'Parte 1, ex4<br>'
+
+    let i = 1
+    while(i<=10){
+        let multiplicacao = i * 5
+        resultado.innerHTML += '5 x ' + i + ' = ' + multiplicacao + '<br>'
+        i++
+    }
+}
+
 function parte1ex3(){
     resultado.innerHTML = 'Parte 1, ex3<br>'
     let soma = 0
@@ -91,7 +106,7 @@ function parte1ex3(){
         // resultado.innerHTML += i + ':' + soma + '<br>'
         i++
     }
-    resultado.innerHTML = soma
+    resultado.innerHTML += 'Soma dos números de 1 a 100: ' + soma
 }
 
 function parte1ex2(){
