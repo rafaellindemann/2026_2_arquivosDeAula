@@ -84,6 +84,14 @@ let resultado = document.getElementById('resultado')
 
 function parte1ex3(){
     resultado.innerHTML = 'Parte 1, ex3<br>'
+    let soma = 0
+    let i = 1
+    while(i<=100){
+        soma += i
+        // resultado.innerHTML += i + ':' + soma + '<br>'
+        i++
+    }
+    resultado.innerHTML = soma
 }
 
 function parte1ex2(){
