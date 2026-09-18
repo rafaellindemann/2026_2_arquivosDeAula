@@ -6,6 +6,14 @@
     box-shadow: 0 0 5px #00000080;
 }
 
+#raiz, #calcularaiz {
+    background-color: aqua;
+}
+
+.resultados {
+    
+}
+
 .numeros{
     background-color: aqua;
     width: 30px;
