@@ -4,13 +4,14 @@ function executar_68_1_2() {
   const personagens = ["Lúcio Fernando", "Mônica", "Capitão Ganso"];
   personagens.unshift("Dona Bete");
 
-  console.log(personagens);
+  //   console.log(personagens);
+  mostrarArray(personagens);
 }
 function executar_68_1_1() {
   const personagens = ["Lúcio Fernando", "Mônica", "Capitão Ganso"];
   personagens.push("Gill Bates");
 
-  console.log(personagens);
+  //   console.log(personagens);
   mostrarArray(personagens);
 }
 
@@ -28,7 +29,6 @@ function testar() {
 function mostrarArray(a) {
   document.getElementById("resultado").innerHTML = "";
   for (let i = 0; i < a.length; i++) {
-    console.log(a[i]);
     document.getElementById("resultado").innerHTML += `<p>${a[i]}</p>`;
   }
 }
