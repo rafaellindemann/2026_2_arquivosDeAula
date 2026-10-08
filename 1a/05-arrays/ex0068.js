@@ -26,8 +26,41 @@ function testar() {
   //   console.log("Removido: ", removido);
 }
 
+function testar2(){
+  let n = Math.floor(Math.random() * 201) - 100
+
+
+  console.log(n);
+  
+}
+
+function testarArredondamentos(){
+  let c = [0,0,0,0,0]                   
+  let f = [0,0,0,0,0]                   
+  let r = [0,0,0,0,0]                   
+
+  for(let i=0; i<10000; i++){
+    let n = Math.random()*4
+
+    c[Math.ceil(n)]++
+    f[Math.floor(n)]++
+    r[Math.round(n)]++
+  }
+  console.log('ceil', c);
+  console.log('floor', f);
+  console.log('round', r);
+  
+
+// ceil (5)   [0, 2468, 2430, 2532, 2570]
+// floor (5)  [2468, 2430, 2532, 2570, 0]
+// round (5)  [1228, 2446, 2485, 2562, 1279]
+
+}
+
+
 function mostrarArray(a) {
   document.getElementById("resultado").innerHTML = "";
+
   for (let i = 0; i < a.length; i++) {
     document.getElementById("resultado").innerHTML += `<p>${a[i]}</p>`;
   }
