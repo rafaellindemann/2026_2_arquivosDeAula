@@ -26,13 +26,7 @@ function testar() {
   //   console.log("Removido: ", removido);
 }
 
-function testar2(){
-  let n = Math.floor(Math.random() * 201) - 100
 
-
-  console.log(n);
-  
-}
 
 function testarArredondamentos(){
   let c = [0,0,0,0,0]                   

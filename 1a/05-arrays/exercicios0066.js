@@ -21,7 +21,7 @@ console.log('7:', frutas);
 // ['banana', 'maça', 'uva', 'morango' ]
 
 let j = frutas.indexOf('uva')
-frutas.splice(j, 2)
+frutas.splice(j, 1)
 console.log('j: ', j);
 console.log('splice:', frutas);
 
