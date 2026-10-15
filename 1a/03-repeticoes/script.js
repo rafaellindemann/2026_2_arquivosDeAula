@@ -87,6 +87,58 @@ let resultado = document.getElementById('resultado')
 // 5 x 1 = 5
 // 5 x 2 = 10
 
+// let sorteado = Math.ceil(Math.random() * 100)
+// 0.54387468736
+// 54.387468736
+// 55
+
+function parte2ex4(){
+    let n = Number(prompt('Digita aí:'))
+    for(let i=n; i<=1; i--){
+
+    }
+}
+function parte2ex3(){
+    let item = 'vazio'
+    resultado.innerHTML = ''
+    while(item != '0'){
+        item = prompt("Digite um ítem pra lista:")
+        if(item != '0'){
+            resultado.innerHTML += `<p>${item}</p>`
+        }
+    }
+}
+
+
+function parte2ex2(){
+// Somando números pares
+// Peça ao usuário para inserir um número e, em seguida, exiba a soma dos números pares de 2 até o número inserido.
+    resultado.innerHTML = ''
+    let soma = 0
+    let n = Number(prompt("Digite um número:"))
+    for(let i=2; i<=n; i++){
+        if(i%2 == 0){
+            soma += i
+            console.log(i);
+            
+        } 
+    }
+    resultado.innerHTML = soma
+
+}
+
+function parte2ex1(){
+//     🐱‍🏍Aclamação repetida
+// Peça ao usuário para digitar uma palavra e repita essa palavra 10 vezes na tela.
+    resultado.innerHTML = ''
+    let n = Number(prompt("Quantas vezes?"))
+
+    let palavra = prompt("Digite uma palavra:")
+    for(let i=0; i<n; i++){
+        resultado.innerHTML += `<p>${palavra}</p>`
+    }
+}
+
 
 function parte1ex6(){
     
@@ -205,3 +257,12 @@ function somarCompra(){
 
     document.getElementById('resultado').innerHTML = totalCompra
 }
+
+
+
+    // for(let i=0; i<n; i++){
+    //     resultado.innerHTML += `<p>${palavra}</p>`
+    // }
+    // for(variavel de controle; condicao de repetição; increcemento da contagem){
+    //     resultado.innerHTML += `<p>${palavra}</p>`
+    // }
