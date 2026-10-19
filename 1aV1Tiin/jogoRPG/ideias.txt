@@ -1,0 +1,21 @@
+
+atributos:
+vida
+ataque
+iniciativa
+defesa/armadura
+
+por turno
+
+PvP x1: dois jogadores, cada um escolhe um boneco.
+PvE.
+
+algum universo? Bonecos, cenários, (história)...
+
+Ataques/armas:
+Ataque básico
+Ataque alternativo
+Ataque especial
+
+Imagens para os Bonecos
+Pelo menos 6 bonecos

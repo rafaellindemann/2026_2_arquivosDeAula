@@ -1,0 +1,13 @@
+Equipe:
+- Rafael Lindemann
+
+Universo:
+    DinoTreta, uma batalha de dinossauros
+
+Bonecos: 
+- Espinossauro
+- Tiranossauro
+- Velocirraptor
+- Braquiossauro
+- Estegossauro
+- Anquilossauro
