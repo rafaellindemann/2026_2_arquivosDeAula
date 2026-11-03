@@ -1,0 +1,19 @@
+#catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.card-produto{
+    /* background-color: aqua; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+}
+
+.imagem-card{
+    width: 100px;
+}
