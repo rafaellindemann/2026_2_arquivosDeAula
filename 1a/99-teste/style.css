@@ -1,9 +1,23 @@
+*{
+    --fundo-escuro: #232323;
+    --texto-claro: #ffddde;
+}
+
+
 #catalogo{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    /* color: var(--texto-claro); */
+}
+
+h1{
+    border: 10px solid var(--fundo-escuro);
+    padding: 15px;
+    border-radius: 15px;
+    background-color: aqua;
 }
 
 
@@ -13,8 +27,16 @@
     box-shadow: 0 0 10px black;
     padding: 10px;
     width: 200px;
+
 }
 
 .imagem-card{
     width: 100px;
+}
+
+.entradinhas{
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aqua;
 }
