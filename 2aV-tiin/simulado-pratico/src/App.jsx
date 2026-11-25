@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { dadosClima } from './dadosClima'
 import { codigosWmo } from './codigosWmo'
+import './App.css'
 
 function App() {
   const [busca, setBusca] = useState('')
@@ -16,8 +17,15 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>Sol Chuva</h1>
+    <div className='app'>
+      <div className="primeira">
+        <p>⛅</p>
+        <div className="coluna">
+          <h1>Sol Chuva</h1>
+          <p>Tempo certo, onde você estiver.</p>
+        </div>
+
+      </div>
 
       <input
         value={busca}
